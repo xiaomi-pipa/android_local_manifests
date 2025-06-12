@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="github" 
-            fetch="https://github.com/xiaomi-munch"
+            fetch="https://github.com/xiaomi-pipa"
             revision="fifteen"
             clone-depth="1" />
 
     <remote name="codeberg" 
-            fetch="https://codeberg.org/xiaomi-munch"
+            fetch="https://codeberg.org/xiaomi-pipa"
             revision="fifteen"
             clone-depth="1" />
 
     <!-- device tree -->
-    <project remote="github" name="android_device_xiaomi_munch" path="device/xiaomi/munch" />
+    <project remote="github" name="android_device_xiaomi_pipa" path="device/xiaomi/pipa" />
+    <project remote="github" name="android_device_xiaomi_sm8250-common" path="device/xiaomi/sm8250-common" />
     <!-- kernel tree -->
-    <project remote="github" name="android_kernel_xiaomi_munch" path="kernel/xiaomi/munch" />
+    <project remote="github" name="android_kernel_xiaomi_sm8250" path="kernel/xiaomi/sm8250" />
     <!-- vendor tree -->
-    <project remote="github" name="android_vendor_xiaomi_munch" path="vendor/xiaomi/munch" />
+    <project remote="github" name="android_vendor_xiaomi_pipa" path="vendor/xiaomi/pipa" />
+    <project remote="github" name="android_vendor_xiaomi_sm8250-common" path="vendor/xiaomi/sm8250-common" />
     <!-- hardware -->
     <project remote="github" name="android_hardware_xiaomi" path="hardware/xiaomi" />
     <project remote="github" name="android_hardware_dolby" path="hardware/dolby" />
+    <project remote="github" name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
     <!-- miui camera -->
-    <project remote="codeberg" name="android_vendor_xiaomi_miuicamera" path="vendor/xiaomi/miuicamera" />
+    <project remote="github" name="android_device_xiaomi_camera" path="device/xiaomi/camera" />
+    <project remote="codeberg" name="android_vendor_xiaomi_camera" path="vendor/xiaomi/camera" />
 </manifest>
