@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="github" 
-            fetch="https://github.com/xiaomi-pipa"
-            revision="fifteen" />
+  <remote name="pipa" 
+          fetch="https://github.com/xiaomi-pipa"
+          revision="vic" />
 
-    <remote name="codeberg" 
-            fetch="https://codeberg.org/xiaomi-pipa"
-            revision="fifteen" />
+  <remote name="pipa-codeberg" 
+          fetch="https://codeberg.org/xiaomi-pipa"
+          revision="vic" />
 
-    <!-- device tree -->
-    <project remote="github" name="android_device_xiaomi_pipa" path="device/xiaomi/pipa" />
-    <project remote="github" name="android_device_xiaomi_sm8250-common" path="device/xiaomi/sm8250-common" />
-    <!-- kernel tree -->
-    <project remote="github" name="android_kernel_xiaomi_sm8250" path="kernel/xiaomi/sm8250" clone-depth="1" />
-    <!-- vendor tree -->
-    <project remote="github" name="android_vendor_xiaomi_pipa" path="vendor/xiaomi/pipa" clone-depth="1" />
-    <project remote="github" name="android_vendor_xiaomi_sm8250-common" path="vendor/xiaomi/sm8250-common" clone-depth="1" />
-    <!-- hardware -->
-    <project remote="github" name="android_hardware_xiaomi" path="hardware/xiaomi" />
-    <project remote="github" name="android_hardware_dolby" path="hardware/dolby" />
-    <project remote="github" name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
-    <!-- miui camera -->
-    <project remote="github" name="android_device_xiaomi_camera" path="device/xiaomi/camera" />
-    <project remote="codeberg" name="android_vendor_xiaomi_camera" path="vendor/xiaomi/camera" clone-depth="1" />
+  <!-- device tree -->
+  <project remote="pipa" name="android_device_xiaomi_pipa" path="device/xiaomi/pipa" />
+  <project remote="pipa" name="android_device_xiaomi_sm8250-common" path="device/xiaomi/sm8250-common" />
+
+  <!-- hardware -->
+  <project remote="pipa" name="android_hardware_xiaomi" path="hardware/xiaomi" />
+  <project remote="pipa" name="android_hardware_dolby" path="hardware/dolby" />
+  <project remote="pipa" name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
+
+  <!-- kernel tree -->
+  <project remote="pipa" name="android_kernel_xiaomi_sm8250" path="kernel/xiaomi/sm8250" clone-depth="10" />
+
+  <!-- vendor tree -->
+  <project remote="pipa" name="proprietary_vendor_xiaomi_pipa" path="vendor/xiaomi/pipa" clone-depth="10" />
+  <project remote="pipa" name="proprietary_vendor_xiaomi_sm8250-common" path="vendor/xiaomi/sm8250-common" clone-depth="10" />
+
+  <!-- miui camera -->
+  <project remote="pipa" name="android_device_xiaomi_camera" path="device/xiaomi/camera" />
+  <project remote="pipa-codeberg" name="android_vendor_xiaomi_camera" path="vendor/xiaomi/camera" clone-depth="10" />
 </manifest>

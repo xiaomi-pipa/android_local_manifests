@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <project remote="github" name="signing-keys" path="vendor/aosp/signing/keys" revision="master" />
+  <project remote="pipa" name="signing-keys" path="vendor/evolution-priv/keys" />
 </manifest>
