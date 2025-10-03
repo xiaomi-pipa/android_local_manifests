@@ -29,6 +29,9 @@
   <project remote="pipa" name="android_device_xiaomi_camera" path="device/xiaomi/camera" />
   <project remote="pipa-codeberg" name="android_vendor_xiaomi_camera" path="vendor/xiaomi/camera" clone-depth="10" />
 
+  <!-- patchset -->
+  <project remote="pipa" name="android_patchset" path=".patchset" />
+
   <!-- fix build -->
   <remove-project name="LineageOS/android_hardware_qcom_sdm845_display" />
   <remove-project name="LineageOS/android_hardware_qcom_sm7250_display" />

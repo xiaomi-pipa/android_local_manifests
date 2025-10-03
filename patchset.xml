@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project remote="pipa" name="android_patchset" path=".patchset" />
-</manifest>
